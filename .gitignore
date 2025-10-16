@@ -1,0 +1,171 @@
+# =====================================================
+# 🩺 Consultas Médicas — Projeto Fullstack
+# Backend: FastAPI (Python) | Frontend: React Native (Expo)
+# =====================================================
+
+# --- FRONTEND (React Native / Expo) ---
+.expo
+__generated__
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Node Modules
+node_modules/
+jspm_packages/
+web_modules/
+
+# Cache
+.npm
+.eslintcache
+.stylelintcache
+.cache
+.parcel-cache
+.expo-shared
+.expo/
+dist/
+build/
+
+# Coverage / Reports
+coverage/
+*.lcov
+.nyc_output/
+
+# dotenv
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Metro / Expo cache
+.expo/
+.expo-shared/
+.expo-build/
+.expo-cache/
+
+# Android / iOS builds
+android/
+ios/
+*.apk
+*.aab
+*.app
+*.ipa
+*.keystore
+*.jks
+*.hprof
+google-services.json
+GoogleService-Info.plist
+local.properties
+.gradle/
+build/
+output.json
+captures/
+.externalNativeBuild/
+.cxx/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux system
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+.ionide
+
+# Buck / Gradle
+.buckd/
+.buckconfig.local
+buck-out/
+.gradle
+**/build/
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# --- BACKEND (FastAPI / Python) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+.eggs/
+build/
+develop-eggs/
+dist/
+downloads/
+wheels/
+pip-wheel-metadata/
+*.manifest
+*.spec
+*.log
+venv/
+env/
+ENV/
+.venv/
+db.sqlite3
+instance/
+.mypy_cache/
+.pytest_cache/
+.pyre/
+.coverage
+htmlcov/
+celerybeat-schedule
+*.mo
+*.pot
+*.db
+*.sqlite3
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# --- MISC ---
+.DS_Store
+Thumbs.db
