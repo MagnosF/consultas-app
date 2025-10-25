@@ -1,22 +1,8 @@
-// consultas-app/src/rotas/AppRoutes.js
+// consultas-app/src/rotas/AppRoutes.js (Versão Atualizada FINAL)
 
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-
-const PlaceholderScreen = () => {
-    // 3. O Hook useAuth DEVE ser chamado dentro do corpo da função
-    const { signOut } = useAuth(); 
-
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text style={{ fontSize: 20, marginBottom: 20 }}>
-                Bem-vindo(a)! Você está logado(a).
-            </Text>
-            {/* 4. O onPress agora chama a função signOut corretamente */}
-            <Button title="SAIR (Logout)" onPress={signOut} color="#DC3545" />
-        </View>
-    );
-};
+import AgendaScreen from '../screens/AgendaScreen';
 
 const AppStack = createStackNavigator();
 
@@ -24,7 +10,20 @@ const AppStack = createStackNavigator();
 export default function AppRoutes() {
     return (
         <AppStack.Navigator>
-            <AppStack.Screen name="Dashboard" component={PlaceholderScreen} />
+            {/* 2. Define a AgendaScreen como a primeira tela */}
+            <AppStack.Screen 
+                name="Agenda" 
+                component={AgendaScreen} 
+                options={{ 
+                    title: 'Minhas Consultas',
+                    // Você pode adicionar um cabeçalho customizado ou botões aqui no futuro
+                }} 
+            />
+            
+            {/* 3. Se quiser adicionar a rota de Agendamento/Criação, ela entraria aqui: */}
+            {/* <AppStack.Screen name="AgendarNovo" component={AppointmentCreateScreen} /> */}
+
+            {/* A tela Placeholder não será mais usada como rota principal */}
         </AppStack.Navigator>
     );
 }
