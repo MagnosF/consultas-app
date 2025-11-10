@@ -7,11 +7,11 @@ from app.routes import auth_routes
 from app.routes import appointment_routes 
 
 # Função para criar a tabela 'users' e 'appointments'
-#def create_db_tables():
+def create_db_tables():
     # Isso cria TODAS as tabelas que herdam de Base, incluindo a nova 'appointments'
-    #Base.metadata.create_all(bind=engine)
+    Base.metadata.create_all(bind=engine)
 
-#create_db_tables() 
+create_db_tables() 
 
 app = FastAPI(title="Consultas Médicas API")
 

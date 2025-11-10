@@ -7,7 +7,7 @@ from typing import Optional, List
 import os
 
 from app.database.connection import get_db
-from app.models.user import User, USER_TYPES # Importa o modelo e os tipos
+from app.models.user import User, USER_TYPES
 from app.schemas.token_schema import TokenData
 
 # Esquema de autenticação: Define onde o FastAPI deve procurar pelo token (Bearer scheme)

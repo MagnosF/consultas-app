@@ -1,8 +1,5 @@
-# consultas-api/app/core/security.py
-
 from passlib.context import CryptContext
 from datetime import datetime, timedelta, timezone
-# Adicione a importação de Optional e Union AQUI:
 from typing import Any, Union, Optional
 import os
 from dotenv import load_dotenv
