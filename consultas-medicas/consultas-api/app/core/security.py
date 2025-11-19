@@ -44,4 +44,4 @@ def create_access_token(
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
-# Nota: A decodificação (verificação do token) será feita pelo FastAPI com OAuth2PasswordBearer.
+# Nota: A decodificação (verificação do token) será feita pelo FastAPI com OAuth2PasswordBearer.'
